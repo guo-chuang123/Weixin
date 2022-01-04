@@ -1,2 +1,35 @@
-<!--pages/demo1/demo.wxml-->
-<text>pages/demo1/demo.wxml</text>
+<!-- pages/demo1/demo.wxml -->
+<!-- <text>pages/demo1/demo.wxml</text> -->
+<!-- <text class="" selectable="false" space="false" decode="false"> -->
+<!-- </text> -->
+<view class="" hover-class="none" hover-stop-propagation="false">
+  Hello  {{msg}}
+ {{person.name}} 
+ {{person.age}} 
+ {{person.sex}}
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+  <checkbox class="" value="" disabled="false" checked="{{isCheck}}" color=""></checkbox>
+</view>
+<view class="" wx:for="{{list}}" wx:for-item="item" wx:key="id" wx:for-index="index">
+  <text class="" selectable="false" space="false" decode="false">
+    
+    <text class="" selectable="false" wx-if="{{index%2 === 0?true:false}}" space="false" decode="false">
+      {{item.id}}号嘉宾是：{{item.name}}
+    </text>
+  </text>
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+  <view wx:for="{{person}}" wx:key="age">
+      {{index}} : {{item}}
+  </view>
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+  =================================
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+  <input type="text" bindinput="add"/>
+  <button bindtap='handle' data-operation="{{1}}">+</button>
+  <button bindtap='handle' data-operation="{{-1}}">-</button>
+  {{num}}
+</view>
