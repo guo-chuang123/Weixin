@@ -2,34 +2,32 @@
 <!-- <text>pages/demo1/demo.wxml</text> -->
 <!-- <text class="" selectable="false" space="false" decode="false"> -->
 <!-- </text> -->
-<view class="" hover-class="none" hover-stop-propagation="false">
-  Hello  {{msg}}
- {{person.name}} 
- {{person.age}} 
- {{person.sex}}
-</view>
+  <swiper class="" autoplay="{{true}}" interval="2000" circular="{{true}}" indicator-dots="{{true}}" indicator-color="#0094ff" indicator-active-color="#ff6700">
+    <swiper-item class="" item-id=""> 
+      <image class="" src="//imgcps.jd.com/ling4/100014794825/5LyB5Lia5pqW5b-D5a2j/5bm06IqC56S855uSMuS7tjXmipg/p-5bd8253082acdd181d02fa02/498d6c65/cr/s/q.jpg" mode="widthFix" lazy-load="false" binderror="" bindload=""/>
+    </swiper-item>
+    <swiper-item class="" item-id="">
+      <image src="//imgcps.jd.com/img-cubic/creative_server_cib/v2/2000366/2967915/FocusFullshop/CkNqZnMvdDEvMTg1NzEwLzgvMTk5NjMvNDE0MDMxLzYxMWRlNjBlRWE5ZDZmOGVhL2JhMTA0MzUxNDE0YTIzYmUucG5nEgkyLXR5XzBfNTMwAjjui3pCGQoV5LiD5Yy554u85L-d5pqW5YaF6KGjEABCDgoKOOaKmOenkuadgBABQhAKDOeri-WNs-aKoui0rRACQgcKA-aKohAHWOuStQE/cr/s/q.jpg" mode="widthFix"/>
+    </swiper-item>
+          <swiper-item class="" item-id="">
+      <image class="" src="//imgcps.jd.com/img-cubic/creative_server_cib/v2/2000366/100007879357/FocusFullshop/CkNqZnMvdDEvMjExMDc5LzExLzEzOTUwLzg2NTk5LzYxYzdkZDdjRTRmYmY1YzU5LzhiMTljZDZjODQ4NTFjMjAuanBnEgo5OTktdHlfMF8xMAE47ot6WL3FvMf0Ag/cr/s/q.jpg" mode="widthFix" lazy-load="false" binderror="" bindload=""/>
+    </swiper-item>
+      
+  </swiper>
+<navigator class="" target="" url="/pages/demo2/demo2" hover-class="navigator-hover" open-type="navigate">
+  返回首页
+</navigator>
+  
 <view class="" hover-class="none" hover-stop-propagation="false">
   <checkbox class="" value="" disabled="false" checked="{{isCheck}}" color=""></checkbox>
-</view>
-<view class="" wx:for="{{list}}" wx:for-item="item" wx:key="id" wx:for-index="index">
-  <text class="" selectable="false" space="false" decode="false">
-    
-    <text class="" selectable="false" wx-if="{{index%2 === 0?true:false}}" space="false" decode="false">
-      {{item.id}}号嘉宾是：{{item.name}}
-    </text>
-  </text>
 </view>
 <view class="" hover-class="none" hover-stop-propagation="false">
   <view wx:for="{{person}}" wx:key="age">
       {{index}} : {{item}}
   </view>
 </view>
-<view class="" hover-class="none" hover-stop-propagation="false">
-  =================================
-</view>
-<view class="" hover-class="none" hover-stop-propagation="false">
-  <input type="text" bindinput="add"/>
-  <button bindtap='handle' data-operation="{{1}}">+</button>
-  <button bindtap='handle' data-operation="{{-1}}">-</button>
-  {{num}}
-</view>
+<image class="" src="http://a1.qpic.cn/psc?/V11y4F6t3ZY14l/bqQfVz5yrrGYSXMvKr.cqV*MUT.G1w.vvJooMiYlyFX*yUKt*kMZw4EBz5PPBrkO*7CkHtZ24f*O7FQa.OaRgFyjaUwL4EvlN37*7eHSPkI!/b&ek=1&kp=1&pt=0&bo=UwhABlMIQAYRECc!&tl=1&vuin=925205797&tm=1641279600&sce=50-1-1&rf=4-0" mode="aspectFit" lazy-load="false" binderror="" bindload="" />
+  
+
+    
+  

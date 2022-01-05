@@ -1,0 +1,15 @@
+<navigator class="" target="" url="/pages/demo3/demo3" open-type="navigate">
+  返回demo1
+</navigator> 
+<navigator class="" target="" url="/pages/demo1/demo" open-type="switchTab">
+  返回首页
+</navigator>
+<button>按钮1</button>
+<button size="mini" type="warn" plain="{{true}}" open-type="">按钮2</button>
+<button plain="{{true}}" type="primary" open-type="contact">contact</button>
+  <button plain="{{true}}" type="primary" open-type="share">share</button>
+  <button plain="{{true}}" type="primary" open-type="getPhoneNumber">getPhoneNumber</button>
+  <button plain="{{true}}" type="primary" open-type="getUserInfo"bindgetuserinfo="getUserinfo">getUserInfo</button>
+  <button plain="{{true}}" type="primary" open-type="launchApp">launchApp</button>
+  <button plain="{{true}}" type="primary" open-type="openSetting">opensetting</button>
+  <button plain="{{true}}" type="primary" open-type="feedback">feedback</button>

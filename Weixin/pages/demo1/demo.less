@@ -1,18 +1,20 @@
 /* pages/demo1/demo.wxss */
-view {
+@ThemColor:#ff6700;
+
+view{
   width: 200rpx;
   height: 200rpx;
   font-size: 20px;
   background-color: aqua;
   margin-bottom: 5rpx;
-}
-view view {
-  background-color: #ff6700;
-}
-swiper {
+  view{
+    background-color: @ThemColor;
+  }
+} 
+swiper{
   width: 100%;
   height: calc(100vw*470/590);
-}
-swiper image {
-  width: 100%;
+  image{
+    width: 100%;
+  }
 }
