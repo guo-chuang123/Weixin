@@ -1,5 +1,5 @@
-<navigator class="" target="" url="/pages/demo3/demo3" open-type="navigate">
-  返回demo1
+<navigator class="" target="" url="/pages/demo3/demo3" open-type="redirect">
+  返回demo3
 </navigator> 
 <navigator class="" target="" url="/pages/demo1/demo" open-type="switchTab">
   返回首页
@@ -13,3 +13,28 @@
   <button plain="{{true}}" type="primary" open-type="launchApp">launchApp</button>
   <button plain="{{true}}" type="primary" open-type="openSetting">opensetting</button>
   <button plain="{{true}}" type="primary" open-type="feedback">feedback</button>
+
+  <radio-group bindchange="getSex">
+    <radio class="" value="man" color="blue">
+      男
+    </radio>
+      
+    <radio class="" value="feman"   color="blue">
+       女
+    </radio>
+      
+  </radio-group>
+  <view class="" hover-class="none" hover-stop-propagation="false">
+    性别：{{gender}}
+  </view>
+  <checkbox-group bindchange="ietmChange">
+    <checkbox class="" value="{{item.value}}" wx:for="{{list}}" wx:key="id" color="">
+      
+    </checkbox>
+  </checkbox-group>
+  <text class="" selectable="false" space="false" decode="false">
+    {{chexkList}}
+  </text>
+    
+    
+    

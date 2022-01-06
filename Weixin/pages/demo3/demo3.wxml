@@ -1,2 +1,9 @@
-<!--pages/demo3/demo3.wxml-->
-<text>pages/demo3/demo3.wxml</text>
+
+<!-- 引入子组件 -->
+<Tabs tabs = "{{tabs}}" binditemChange="handleChange"></Tabs>
+
+<navigator class="" target="" url="/pages/demo2/demo2" hover-class="navigator-hover" open-type="redirect">
+  返回demo2
+</navigator>
+
+  

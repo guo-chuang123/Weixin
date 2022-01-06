@@ -5,9 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tabs: [
+      {
+        id: 0,
+        name: "首页",
+        isActive:true
+      },
+      {
+        id: 1,
+        name: "原创",
+        isActive:false
+      },
+      {
+        id: 2,
+        name: "分类",
+        isActive:false
+      },
+      {
+        id: 3,
+        name: "关于",
+        isActive:false
+      },
+    ]
   },
-
+  // 用来接收自组件数据
+  handleChange(e) {
+    const { index } = e.detail
+      let { tabs } = this.data
+      tabs.forEach((item, i) =>
+        i === index ? item.isActive = true : item.isActive = false)
+      this.setData({
+      tabs
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
